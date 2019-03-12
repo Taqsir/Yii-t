@@ -1,0 +1,45 @@
+<idea-plugin>
+    <id>com.xu</id>
+    <name>Yii::t</name>
+    <version>1.2</version>
+    <vendor email="nizomiddin@gmail.com" url="https://github.com/Taqsir/Yii-t">sherman</vendor>
+
+    <description><![CDATA[
+      Yii::t helper.<br>
+      <em> Yii::t("app","translate") autocomplete</em>
+      <ul>
+        <li>1.select the text "translate"</li>
+        <li>2.Alt+3</li>
+        <li>3. Yii::t("app","translate") has autocomplete </li>
+      </ul>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      fix bug.<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <depends>com.jetbrains.php</depends>
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+      <action id="com.xu.YiiAction" class="com.xu.YiiAction"   text="Yii::t autocomplete" description="Yii::t autogenerate" >
+          <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+          <keyboard-shortcut keymap="$default" first-keystroke="alt 3"/>
+      </action>
+  </actions>
+
+</idea-plugin>
