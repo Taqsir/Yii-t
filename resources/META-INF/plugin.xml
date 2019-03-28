@@ -2,7 +2,7 @@
     <id>com.xu</id>
     <name>Yii::t</name>
     <version>1.2</version>
-    <vendor email="nizomiddin@gmail.com" url="https://github.com/Taqsir/Yii-t">sherman</vendor>
+    <vendor email="nizomiddin@gmail.com" url="https://github.com/Taqsir/Yii-t">Taqsir</vendor>
 
     <description><![CDATA[
       Yii::t helper.<br>
